@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script defer src="script.js"></script>
     <title>My Portfolio</title>
 </head>
 <body>
@@ -23,16 +24,41 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            My name is Lana and I am 20 years  old. I have studied at Mohawk College in 2022 in the Networking and Security Analyst, but did not complete for some circumtnces.
-            Now I am a student at Humber studying computer programming. I have learned many things about coding and still interested to dive in more and more.
-       
+            My name is Lana, and I am 20 years old. In 2022, I studied Networking and Security Analysis at Mohawk College,
+             where I gained valuable knowledge in networking and coding. Unfortunately, I was unable to complete the program
+              due to unforeseen circumstances. Currently, I am a student at Humber College, pursuing a degree in Computer Programming. 
+              I have learned a great deal about coding and remain eager to deepen my understanding and explore new areas of the field.
         </p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
-        <p>This is a placeholder for your projects. In future chapters, you’ll add real projects here.</p>
+            <div class="gallery"> 
+                 <div class="project"></div>
+                    <h3>Webpages</h3>
+                    <button class="click-details">Show Details</button>
+                    <div class="project-details" style="display: none;">
+                        <p>I completed an HTML and CSS course at Mohawk College, where we focused on developing various types of webpages using only HTML and CSS. 
+                            The course taught me how to structure content with HTML and style it with CSS to create functional and visually appealing designs. 
+                            We worked in Notepad++, allowing me to gain hands-on experience coding from scratch. This course provided a strong foundation in 
+                            web development and enhanced my understanding of clean coding and web design principles.</p>
+                    </div>
+
+                    <div class="project"></div>
+                    <h3>Portfolio</h3>
+                    <button class="click-details">Show Details</button>
+                    <div class="project-details" style="display: none;">
+                        <p>In creating my portfolio website, I applied everything I learned throughout my web development course to showcase my skills. The website is divided into three distinct sections, each demonstrating different techniques I mastered.
+
+                            In the About Me section, I utilized simple padding and spacing to arrange the text in a visually pleasing and organized way. This approach ensured that the content is easy to read and aesthetically appealing.
+                            
+                            For the Projects section, I implemented a Dynamic Project Gallery using Flexbox, which allows for a responsive layout and interactive functionality. This gallery enables users to explore my projects in a more engaging and fluid way, making the experience both user-friendly and visually dynamic.
+                            
+                            By integrating these techniques, I’ve built a portfolio that not only highlights my learning but also reflects my ability to create clean, responsive, and well-structured websites.</p>
+                    </div>
+            </div>
+
     </section>
 
     <!-- Contact Section -->
