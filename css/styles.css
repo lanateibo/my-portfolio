@@ -79,19 +79,17 @@ footer {
     .gallery {
         background-color:#e4cfe6;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 30px;
-        padding: 30px;
-        margin: 0 auto;
-        max-width: 1200px;
-        border-radius: 10px;
-    }
+        grid-template-columns: repeat(1, 2fr);
+        gap: 20px;
+        padding: 20px;
+    } 
 
+   
     button{
         background-color:#910891;
         color: whitesmoke;
         border-style: double;
-        padding: 10px 20px;
+        padding: 20px;
         font-size: 1em;
         border-radius: 5px;
         cursor: pointer;
