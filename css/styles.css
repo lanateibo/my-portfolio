@@ -1,61 +1,81 @@
-/* General Styles */
+
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    line-height: 1.4;
-    background-color: #f5b9f8;
+    line-height: 1.6;
+    background-color: #fff0f5; 
+    color: #3c004d;
+    scroll-behavior: smooth;
 }
 
 header {
-    background-color: #910891;
-    color: whitesmoke;
-    padding: 15px;
+    background-color: #d291bc; 
+    color: #fff;
+    padding: 20px;
     text-align: center;
-   
+    box-shadow: 0 4px 8px rgba(144, 19, 254, 0.3);
 }
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin-right: 0 15px;
 }
 
 nav ul li a {
     color: whitesmoke;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 20px;
 }
 
 nav ul li a:hover {
 
-    text-decoration: underline;
+    text-decoration: underline ;
+    text-underline-offset: 4px;
+    color: #ffe1f5;
 }
 
 
 section {
-    padding: 10px;
-    margin: 20px;
-    background-color: rgb(175, 156, 201);
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(112, 6, 133, 0.532);
+    padding: 40px 20px;
+    margin: 20px auto;
+    background-color: #ffe4f2;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(226, 147, 227, 0.4);
 }
 
 h2 {
-    color: #333;
+    color: #8e24aa;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+
 }
 
 
 footer {
-    background-color: #910891;
-    color: whitesmoke;
+    background-color: #d291bc;
+    color: white;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     position: fixed;
+    margin-top: 30px;
     bottom: 0;
     width: 100%;
 }
@@ -78,45 +98,47 @@ footer {
 }
 
     .gallery {
-        background-color:#e4cfe6;
         display: grid;
-        grid-template-columns: repeat(1, 2fr);
-        gap: 20px;
+        grid-template-columns: 1fr;
+        gap: 30px;
         padding: 20px;
+        background-color: #fbe8ff;
+        border-radius: 12px;
     } 
 
    
     button{
-        background-color:#910891;
-        color: whitesmoke;
-        border-style: double;
-        padding: 20px;
-        font-size: 1em;
-        border-radius: 5px;
+        background-color: #c66ac1;
+        color: #fff;
+        border: none;
+        padding: 12px 25px;
+        font-size: 1rem;
+        border-radius: 8px;
         cursor: pointer;
-        width: 250px;
-       
+        transition: all 0.3s ease;
+        margin-top: 10px;
+        box-shadow: 0 4px 8px rgba(204, 102, 255, 0.2);
     }
 
     button:hover {
-        background-color:#f5b9f8;
+        background-color: #e89de9;
+        color: #4a004f;
     }
 
     form{
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: #2e2b2b;
-        width: 100px;
-        text-align:left;
-        line-height: 2.5;
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin-top: 20px;
     }
 
     input, textarea{
-        width: 240px;
-        padding: 10px;
-        margin-top: 5px;
-        border: solid;
-        border-radius: 5px;
+        margin: 10px 0;
+        padding: 12px;
+        border: 2px solid #cc74c9;
+        border-radius: 8px;
+        font-size: 1rem;
+        background-color: #fff;
     }
 
     .error-message{
@@ -124,3 +146,57 @@ footer {
         font-size: 0.6em;
         
     }
+
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s ease-in-out forwards;
+    }
+    
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    
+
+#about p {
+    opacity: 0;
+    transform: scale(0.95);
+    animation: glowScaleIn 1.8s ease-in-out forwards;
+    animation-delay: 0.3s;
+    color: #3b003b; 
+    text-shadow: 0 0 10px #e09ec7, 0 0 20px #f3b3ec;
+}
+
+@keyframes glowScaleIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.filter-controls {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #c66ac1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-btn:hover {
+    background-color: #e89de9;
+    color: #4a004f;
+  }
+  
