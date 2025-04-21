@@ -76,3 +76,31 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("themeToggle");
+    const body = document.body;
+
+
+    function updateIcon() {
+        if (body.classList.contains("dark-mode")) {
+            toggleButton.textContent = "🌙"; 
+        } else {
+            toggleButton.textContent = "☀️"; 
+        }
+    }
+
+    
+    updateIcon();
+
+    
+    toggleButton.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        updateIcon();
+    });
+});
+
+
+
+  

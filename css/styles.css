@@ -200,3 +200,124 @@ footer {
     color: #4a004f;
   }
   
+
+
+.dark-mode {
+    background-color: #1a1124;
+    color: #fce4ff;
+    transition: all 0.4s ease;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background-color: #2b1540;
+    color: #fce4ff;
+    box-shadow: 0 2px 10px rgba(193, 105, 230, 0.3);
+}
+
+.dark-mode nav ul li a {
+    color: #fce4ff;
+}
+
+.dark-mode nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffb3f3;
+}
+
+.dark-mode section {
+    background-color: #311e46;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.4);
+    transition: all 0.4s ease;
+}
+
+.dark-mode .gallery {
+    background-color: #3d2a5a;
+}
+
+.dark-mode button {
+    background-color: #6c2c91;
+    color: #fce4ff;
+    border: 2px solid #ff91f5;
+    box-shadow: 0 0 8px rgba(255, 163, 255, 0.4);
+}
+
+.dark-mode button:hover {
+    background-color: #9c3ad2;
+    box-shadow: 0 0 12px rgba(255, 163, 255, 0.6);
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #452f5c;
+    color: #fce4ff;
+    border: 1px solid #e1a4ff;
+    box-shadow: 0 0 8px rgba(255, 153, 255, 0.3);
+}
+
+.dark-mode .error-message {
+    color: #ff6bcb;
+}
+
+.dark-mode h2 {
+    color: #ffb3f3; 
+    text-shadow: 1px 1px 3px rgba(255, 153, 255, 0.3);
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background: linear-gradient(to right, #4a0066, #7b2cbf);
+    color: #fce4ff;
+    box-shadow: 0 2px 12px rgba(255, 153, 255, 0.3);
+    border-bottom: 2px solid #ffb3f3;
+}
+
+.dark-mode header h1,
+.dark-mode footer p {
+    text-shadow: 1px 1px 5px rgba(255, 173, 255, 0.5);
+}
+
+
+#themeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(145deg, #910891, #b44ed4);
+    color: white;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 163, 255, 0.4), 0 0 5px rgba(255, 255, 255, 0.1) inset;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: floatIn 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+
+#themeToggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 163, 255, 0.6), 0 0 8px rgba(255, 255, 255, 0.2) inset;
+}
+
+
+@keyframes floatIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body.dark-mode #about p {
+    color: #f3defd; 
+    text-shadow: 0 0 8px #a64ac9, 0 0 15px #ffb6f9; 
+}
