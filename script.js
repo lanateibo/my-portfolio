@@ -123,5 +123,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
+  document.addEventListener("DOMContentLoaded", function () {
+    const gallery = document.querySelector(".gallery");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                gallery.classList.add("animate-in");
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    if (gallery) {
+        observer.observe(gallery);
+    }
+});
 
   
