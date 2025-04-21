@@ -102,5 +102,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const projects = document.querySelectorAll(".project");
+  
+    filterButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const selectedCategory = button.getAttribute("data-category");
+  
+        projects.forEach(project => {
+          const projectCategory = project.getAttribute("data-category");
+  
+          if (selectedCategory === "all" || selectedCategory === projectCategory) {
+            project.style.display = "block";
+          } else {
+            project.style.display = "none";
+          }
+        });
+      });
+    });
+  });
+  
 
   
