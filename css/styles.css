@@ -10,38 +10,58 @@ body {
 }
 
 header {
-    background-color: #d291bc; 
-    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 20px;
-    text-align: center;
+    background-color: #d291bc;
+    color: #fff;
     box-shadow: 0 4px 8px rgba(144, 19, 254, 0.3);
+    position: relative;
+    z-index: 1;
 }
 
+.brand {
+    display: flex;
+    align-items: center;
+  }
+
+.header-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+
 header h1 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
+    font-size: 1.8rem;
+    margin: 0;
 }
+
+nav {
+    margin-right: 70px; 
+  }
 
 
 nav ul {
     list-style: none;
+    display: flex;
     padding: 0;
     margin: 0;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 0 15px;
+    margin-right: 0 10px;
 }
 
 nav ul li a {
     color: whitesmoke;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    padding: 20px;
+    font-size: 1rem;
+    padding: 10px;
 }
 
 nav ul li a:hover {
@@ -291,7 +311,7 @@ footer {
     box-shadow: 0 0 15px rgba(255, 163, 255, 0.4), 0 0 5px rgba(255, 255, 255, 0.1) inset;
     cursor: pointer;
     transition: all 0.3s ease;
-    z-index: 999;
+    z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -323,20 +343,20 @@ body.dark-mode #about p {
 }
 
 
-/* Start hidden with downward offset */
+
 .gallery {
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.8s ease-out;
 }
 
-/* Animate in when class is added */
+
 .gallery.animate-in {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Project description paragraphs */
+
 #projects p {
     font-size: 1rem;
     line-height: 1.8;
@@ -350,13 +370,13 @@ body.dark-mode #about p {
     margin-top: 10px;
 }
 
-/* Glow on hover */
+
 #projects p:hover {
     box-shadow: 0 0 10px rgba(255, 105, 180, 0.3), 0 0 20px rgba(226, 147, 227, 0.3);
     transform: scale(1.01);
 }
 
-/* Dark mode version */
+
 .dark-mode #projects p {
     color: #fce4ff;
     background: rgba(61, 42, 90, 0.6);
@@ -367,3 +387,5 @@ body.dark-mode #about p {
 .dark-mode #projects p:hover {
     box-shadow: 0 0 12px rgba(255, 153, 255, 0.4), 0 0 20px rgba(155, 89, 182, 0.3);
 }
+
+
